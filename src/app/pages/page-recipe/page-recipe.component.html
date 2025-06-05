@@ -1,0 +1,36 @@
+<p class="back-btn" (click)="location.back()">Go back</p>
+@if(recipes.selectedRecipe){
+<div class="recipe-container">
+    <p class="recipe-header">{{recipes.selectedRecipe.name}}</p>
+    <div class="content-block">
+        <div class="details-section">
+            <p class="section-header">Instructions</p>
+            <div class="instructions-list">
+                @for(instruction of recipes.selectedRecipe.instructions; track $index ){
+                <p class="instruction-item">{{instruction}}</p>
+                }
+            </div>
+            <p class="section-header stats-title">Information</p>
+            <div class="stats-container">
+                <div class="stat-card">
+                    <p class="stat-value">{{recipes.selectedRecipe.caloriesPerServing}}</p>
+                    <p class="stat-label">Calories</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-value">{{recipes.selectedRecipe.rating}}</p>
+                    <p class="stat-label">Rating</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-value">{{recipes.selectedRecipe.prepTimeMinutes}}</p>
+                    <p class="stat-label">Prep time minutes</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-value">{{recipes.selectedRecipe.cookTimeMinutes}}</p>
+                    <p class="stat-label">Cook time minutes</p>
+                </div>
+            </div>
+        </div>
+        <img class="recipe-image" [src]="recipes.selectedRecipe.image" alt="">
+    </div>
+</div>
+}

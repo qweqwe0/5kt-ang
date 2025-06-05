@@ -1,0 +1,118 @@
+.back-btn {
+    margin: 30px 0 30px 70px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.back-btn:hover {
+    cursor: pointer;
+}
+
+.recipe-container {
+    padding: 10px 20px 40px;
+    background-color: #F0F7FF;
+    border-radius: 20px;
+    border: 9px solid #FFFFFF;
+    border-top: 5px solid #FFFFFF;
+    border-bottom: 5px solid #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.recipe-header {
+    font-family: 'Arima';
+    color: #404040;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 39px;
+}
+
+.content-block {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    width: fit-content;
+    height: 100%;
+}
+
+.details-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-height: 320px;
+    width: fit-content;
+}
+
+.section-header {
+    font-family: 'Arima';
+    color: #969696;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+.instructions-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    height: 130px;
+    overflow-y: scroll;
+    width: 350px;
+}
+
+.instruction-item {
+    border-radius: 7px;
+    padding: 5px 9px;
+    border: 1px solid #FFFFFF;
+    border-left: 4px solid #FFFFFF;
+    border-right: 4px solid #FFFFFF;
+}
+
+.stats-title {
+    margin-top: auto;
+}
+
+.stats-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px 12px;
+    gap: 25px;
+    max-width: 90px;
+    border: 1px solid #FFFFFF;
+    border-radius: 7px;
+}
+
+.stat-value {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: black;
+}
+
+.stat-label {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    color: #969696;
+    text-align: center;
+}
+
+.recipe-image {
+    width: 319px;
+    height: 319px;
+    border: 9px solid #FFFFFF;
+    border-radius: 7%;
+}

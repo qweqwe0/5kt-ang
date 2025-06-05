@@ -1,0 +1,38 @@
+<div class="dish-container">
+    @for(dish of recipes.mainRecipes; track $index){
+    <div class="dish-card">
+        <p class="dish-name">{{dish.name}}</p>
+        <div class="card-content">
+            <div class="details">
+                <p class="section-title">Ingredients</p>
+                <div class="items-list">
+                    @for(item of dish.ingredients; track $index){
+                    <p class="item">{{item}}</p>
+                    }
+                </div>
+                <p class="section-title stats-title">Information</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <p class="value">{{dish.caloriesPerServing}}</p>
+                        <p class="label">Calories</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="value">{{dish.rating}}</p>
+                        <p class="label">Rating</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="value">{{dish.prepTimeMinutes}}</p>
+                        <p class="label">Prep time minutes</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="value">{{dish.cookTimeMinutes}}</p>
+                        <p class="label">Cook time minutes</p>
+                    </div>
+                </div>
+            </div>
+            <img class="dish-image" [src]="dish.image" alt="">
+        </div>
+        <a [routerLink]="'/recipe/' + dish.id"><button class="view-btn">Recipe</button></a>
+    </div>
+    }
+</div>

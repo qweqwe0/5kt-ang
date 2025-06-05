@@ -1,0 +1,56 @@
+.explorer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.filter-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 25px;
+}
+
+.filter-nav a {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.horizontal-filter {
+    margin-left: 100px;
+}
+
+.vertical-filter {
+    flex-direction: column-reverse;
+    margin-top: 100px;
+    gap: 80px;
+    width: 100px;
+    justify-content: start;
+}
+
+.vertical-filter li {
+    transform: rotate(-90deg);
+    position: relative;
+    transform-origin: top left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-left: 30px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.selection-indicator {
+    display: block;
+    position: absolute;
+    margin-top: 40px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--blue);
+    border-radius: 100%;
+}

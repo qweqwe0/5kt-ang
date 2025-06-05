@@ -1,0 +1,27 @@
+<section class="explorer-section">
+    <ul class="filter-nav horizontal-filter">
+        <li><a [class]="recipeData.level === 'all' ? 'active' : ''" [routerLink]="'/' + recipeData.time + '/all'">All</a></li>
+        <li><a [class]="recipeData.level === 'easy' ? 'active' : ''" [routerLink]="'/' + recipeData.time + '/easy'">Easy</a></li>
+        <li><a [class]="recipeData.level === 'medium' ? 'active' : ''" [routerLink]="'/' + recipeData.time + '/medium'">Medium</a></li>
+    </ul>
+    <div class="content-wrapper">
+        <ul class="filter-nav vertical-filter">
+            <li><a [class]="recipeData.time === 'dinner' ? 'active' : ''" [routerLink]="'/dinner/' + recipeData.level">Dinner</a>
+                @if (recipeData.time === 'dinner') {
+                <span class="selection-indicator"></span>
+                }
+            </li>
+            <li><a [class]="recipeData.time === 'lunch' ? 'active' : ''" [routerLink]="'/lunch/' + recipeData.level">Lunch</a>
+                @if (recipeData.time === 'lunch') {
+                <span class="selection-indicator"></span>
+                }
+            </li>
+            <li><a [class]="recipeData.time === 'breakfast' ? 'active' : ''" [routerLink]="'/breakfast/' + recipeData.level">Breakfast</a>
+                @if (recipeData.time === 'breakfast') {
+                <span class="selection-indicator"></span>
+                }
+            </li>
+        </ul>
+        <app-dish-list />
+    </div>
+</section>

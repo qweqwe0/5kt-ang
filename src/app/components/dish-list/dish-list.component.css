@@ -1,0 +1,124 @@
+.dish-container {
+    display: flex;
+    flex-direction: row;
+    gap: 220px;
+    width: calc(100vw - 100px);
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.dish-card {
+    padding: 15px 25px 45px;
+    background-color: #F0F7FF;
+    border-radius: 19px;
+    border: 8px solid #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    min-width: 640px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.dish-name {
+    font-family: 'Arima', sans-serif;
+    color: #404040;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 40px;
+}
+
+.card-content {
+    display: flex;
+    gap: 45px;
+    align-items: flex-start;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    min-height: 310px;
+}
+
+.section-title {
+    font-family: 'Arima', sans-serif;
+    color: #969696;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.items-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-height: 140px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.item {
+    border-radius: 6px;
+    padding: 6px 10px;
+    border: 1px solid #FFFFFF;
+    background-color: rgba(255,255,255,0.2);
+    font-size: 14px;
+}
+
+.stats {
+    display: flex;
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    min-width: 80px;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.value {
+    font-weight: 600;
+    font-size: 21px;
+    color: #404040;
+}
+
+.label {
+    font-size: 12px;
+    color: #969696;
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 13px;
+}
+
+.dish-image {
+    width: 310px;
+    height: 310px;
+    object-fit: cover;
+    border: 8px solid #FFFFFF;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.view-btn {
+    background-color: #408EBA;
+    border-radius: 6px;
+    padding: 10px 55px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    align-self: center;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.view-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
